@@ -28,6 +28,7 @@ import {
 
 /* REDUCER USED IN HomeScreen COMPONENT */
 export const productListReducer = (state = { products: [] }, action) => {
+
   switch (action.type) {
     case PRODUCT_LIST_REQUEST:
       return {
@@ -59,6 +60,7 @@ export const productDetailsReducer = (
   state = { product: { reviews: [] } },
   action
 ) => {
+
   switch (action.type) {
     case PRODUCT_DETAILS_REQUEST:
       return {
@@ -85,6 +87,7 @@ export const productDetailsReducer = (
 
 /* REDUCER USED IN ProductListScreen COMPONENT */
 export const productDeleteReducer = (state = {}, action) => {
+
   switch (action.type) {
     case PRODUCT_DELETE_REQUEST:
       return {
@@ -110,6 +113,7 @@ export const productDeleteReducer = (state = {}, action) => {
 
 /* REDUCER USED IN ProductListScreen COMPONENT */
 export const productCreateReducer = (state = {}, action) => {
+
   switch (action.type) {
     case PRODUCT_CREATE_REQUEST:
       return {
@@ -139,6 +143,7 @@ export const productCreateReducer = (state = {}, action) => {
 
 /* REDUCER USED IN ProductEditScreen COMPONENT */
 export const productUpdateReducer = (state = { product: {} }, action) => {
+
   switch (action.type) {
     case PRODUCT_UPDATE_REQUEST:
       return {
@@ -168,6 +173,7 @@ export const productUpdateReducer = (state = { product: {} }, action) => {
 
 /* REDUCER USED IN ProductScreen COMPONENT */
 export const productReviewCreateReducer = (state = {}, action) => {
+
   switch (action.type) {
     case PRODUCT_CREATE_REVIEW_REQUEST:
       return {
@@ -196,6 +202,7 @@ export const productReviewCreateReducer = (state = {}, action) => {
 
 /* REDUCER USED IN ProductCarousel COMPONENT */
 export const productTopRatedReducer = (state = { products: [] }, action) => {
+  
   switch (action.type) {
     case PRODUCT_TOP_REQUEST:
       return {
