@@ -26,6 +26,7 @@ import {
 
 /* REDUCER USED IN PlaceOrder COMPONENT */
 export const orderCreateReducer = (state = {}, action) => {
+
   switch (action.type) {
     case ORDER_CREATE_REQUEST:
       return {
@@ -58,6 +59,7 @@ export const orderDetailsReducer = (
   state = { loading: true, orderItems: [], shippingAddress: {} },
   action
 ) => {
+
   switch (action.type) {
     case ORDER_DETAILS_REQUEST:
       return {
@@ -84,6 +86,7 @@ export const orderDetailsReducer = (
 
 /* REDUCER USED IN OrderScreen COMPONENT TO MAKE PAYMENT */
 export const orderPayReducer = (state = {}, action) => {
+
   switch (action.type) {
     case ORDER_PAY_REQUEST:
       return {
@@ -112,6 +115,7 @@ export const orderPayReducer = (state = {}, action) => {
 
 /* REDUCER USED TO GET DATA OF ALL THE ORDERS PLACED BY USER IN ProfileScreen COMPONENT */
 export const orderListMyReducer = (state = { orders: [] }, action) => {
+
   switch (action.type) {
     case ORDER_LIST_MY_REQUEST:
       return {
@@ -141,6 +145,7 @@ export const orderListMyReducer = (state = { orders: [] }, action) => {
 
 /* REDUCER USED TO GET DATA OF ALL THE ORDERS PLACED BY ALL USERS IN OrderListScreen COMPONENT */
 export const orderListReducer = (state = { orders: [] }, action) => {
+
   switch (action.type) {
     case ORDER_LIST_REQUEST:
       return {
@@ -166,6 +171,7 @@ export const orderListReducer = (state = { orders: [] }, action) => {
 
 /* REDUCER USED IN OrderScreen COMPONENT TO MAKE STATUS OF DELIVERY */
 export const orderDeliverReducer = (state = {}, action) => {
+  
   switch (action.type) {
     case ORDER_DELIVER_REQUEST:
       return {
